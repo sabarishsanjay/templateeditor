@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="75px" viewBox="0 0 100 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="4" y="18" width="91" height="17" rx="5"></rect>
+        <rect id="path-2" x="4" y="38" width="47" height="32" rx="5"></rect>
+        <rect id="path-3" x="55" y="38" width="40" height="32" rx="5"></rect>
+        <rect id="path-4" x="4" y="4" width="91" height="11" rx="5"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <rect id="Rectangle" stroke="#979797" x="0.5" y="0.5" width="99" height="74" rx="8"></rect>
+            <g id="Rectangle-3">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#979797" stroke-width="1" x="4.5" y="18.5" width="90" height="16" rx="5"></rect>
+            </g>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <rect stroke="#979797" stroke-width="1" x="4.5" y="38.5" width="46" height="31" rx="5"></rect>
+            </g>
+            <g id="Rectangle-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <rect stroke="#979797" stroke-width="1" x="55.5" y="38.5" width="39" height="31" rx="5"></rect>
+            </g>
+            <g id="Rectangle-2">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <rect stroke="#979797" stroke-width="1" x="4.5" y="4.5" width="90" height="10" rx="5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

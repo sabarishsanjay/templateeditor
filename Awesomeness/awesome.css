@@ -1,0 +1,176 @@
+body{
+font-family: 'Montserrat', sans-serif;
+}
+a:hover{
+  color:#000000 !important;
+
+}
+a:active{
+  color: #000000 !important;
+}
+a{
+font-family: 'Montserrat',sans-serif;
+}
+.modal{
+  /* Rectangle 9: */
+background: rgba(12,12,12,0.50);
+background-blend-mode: overlay;
+}
+.modal .background{
+
+}
+#nav1{
+width: 50px;
+height: 100%;
+left: 0;
+top: 0;
+z-index: 10;
+position: fixed;
+background-color: #fff;
+box-shadow: 1px 1px 5px #d3d3d3 !important;
+}
+#topbar{
+width: 100%;
+height: 50px;
+position: fixed;
+top:0;
+left: 0;
+background-color: #E2E2E2;
+z-index:8;
+}
+.icon{
+margin: 15px;
+margin-top: 20px;
+
+}
+
+.modal-content{
+
+  width: 500px;
+  height:600px auto;
+
+  border-radius: 5px !important;
+  box-shadow: 1px 1px 5px #666666 !important;
+}
+.modal{
+  font-family: 'Montserrat',sans-serif;
+}
+
+.close{
+  margin: 10px;
+}
+tooltip{
+  font-family: 'Montserrat',sans-serif;
+}
+
+.data-toggle1{
+  font-family: 'Montserrat',sans-serif;
+}
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+.card{
+  padding:auto 20px auto 30px;
+}
+
+
+.preview{
+  width:150px;
+  height:100px;
+  font-size: 0.25rem;
+
+}
+
+#editor{
+  margin: 100px;
+}
+.template{
+  font-family:'Montserrat',sans-serif;
+  width: 1000px !important;
+  height: 700px !important;
+}
+
+.template .description,.template .header{
+  border:1px; border-style:dotted; border-radius: 5px;
+  margin:20;
+}
+
+.preview .description,.preview .header{
+  border:0px; border-style:solid;
+
+}
+[background]:{
+  filter
+}
+
+[contenteditable=true]:empty:before{
+  content:attr(placeholder);
+  display:block;
+  opacity:0.5;
+}
+.modal-body{
+  padding-bottom: 0;
+}
+
+.modal {
+  opacity: 0.2;
+}
+#pagebar{
+  width:200px;
+  height:100%;
+  background-color: #E8E7E7;
+  right: 0;
+  top:0;
+  position:fixed;
+  z-index:6;
+  font-family: 'Montserrat' ,sans-serif;
+}
+.fade1{
+  width: 100%;
+  height:100%;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+
+}
+
+.header{
+  text-align: center;
+}

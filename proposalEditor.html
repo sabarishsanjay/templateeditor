@@ -1,0 +1,521 @@
+<html>
+
+  <head>
+    <title>Template Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Awesomeness/awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/card.min.css">
+    <script src="//rubaxa.github.io/Sortable/Sortable.js"></script>
+
+  </head>
+
+  <body style="background-color: #ECECEC;">
+    <div id="nav1">
+      <img class="icon" src="Media/add.svg" width="20px" height="20px" data-toggle1="tooltip" data-toggle="modal" data-placement="right"
+        data-target="#exampleModal" title="Add Template" style="z-index:15;top:60;margin-top:70px;">
+      <img class="icon" id="addpage" src="Media/addpage.svg" width="25px" height="25px" data-toggle1="tooltip" data-toggle="modal" data-placement="right"
+        title="Add Page" data-target="#exampleModal1" style="z-index:15;">
+      <img class="icon" id="export" src="Media/export.svg" width="22px" height="22px" data-toggle1="tooltip" data-toggle="modal" data-placement="right"
+        title="Export" data-target="#exampleModal2" style="bottom:10;position:relative;z-index:15;">
+      <img class="icon" id="arrange" src="Media/arrange.svg" width="22px" height="22px" data-toggle1="tooltip" data-placement="right" title="Rearrange Slides"></span>
+      <img class="icon" id="export" src="Media/save.svg" width="22px" height="22px" data-toggle1="tooltip"  data-placement="right"
+        title="Save as"  style="bottom:10;position:relative;z-index:15;">
+    </div>
+    <div id="topbar">
+      <div id="position" padding="15px" style="padding-top:15px;">
+        <center><a href="#" style="color:#999999;text-decoration:none;padding-top:15px">Editor</a><span><a href="#"style="color:#999999;text-decoration:none;padding:15px">Preview</a></span></center><span></div>
+  </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="">
+
+
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Choose a template</h3>
+
+        </div>
+        <div class="modal-body">
+          <div id="accordion" class="checkout" class="collapsed">
+            <center><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" data-toggle1="tooltip"
+                title="Add a new template" data-placement="bottom"> <img src="Media/add.svg" width="40px" height="40px"></a></center>
+            <center>
+              <div class="modal-body">
+
+              </div>
+              <div id="collapseOne" class="collapse out">
+                <div class="checkout-step-body">
+                  <h4>What would you like to name the template?</h4>
+                  <div class="checkout-login">
+                    <form>
+                      <div class="login-phone">
+                        <input type="text" id="templatename" class="form-control-sm" placeholder="Name" style="margin:50px" width="70px">
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </center>
+        <div class="modal-body">
+        </div>
+        <div class="modal-body">
+          Recent Templates
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="closeModal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" id="add">Choose</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+      font-family: "Montserrat">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Pages</h5>
+              </div>
+          <div class="modal-body" background-color="#dcdcdc !important">
+             <div style="display:flex;flex-wrap:wrap;">
+                <div class='templateSection hc2c'><img src="Media/layout1.svg" class='1' style="width:100px;height:75px;margin:10px;" data-section="1" draggable="true"><br></div><br>
+                <div class='templateSection cc'><img src="Media/layout2.svg" class='2' style="width:100px;height:75px;margin:10px;" data-section="2" draggable="true"><br></div><br>
+                <div class='templateSection hc'><img src="Media/layout3.svg" class='3' style="width:100px;height:75px;margin:10px;" data-section="3" draggable="true"><br></div><br>
+                <div class='templateSection c2c'><img src="Media/layout4.svg" class='4'style="width:100px;height:75px;margin:10px;" data-section="4" draggable="true"><br></div><br>
+                <div class='templateSection hcc'><img src="Media/layout5.svg" class='5'style="width:100px;height:75px;margin:10px;" data-section="5"draggable="true"><br></div><br>
+                <div class='templateSection c3c'><img src="Media/layout7.svg" class='7' style="width:100px;height:75px;margin:10px;" data-section="7" draggable="true"><br></div><br>
+                <div class='templateSection h2cr'><img src="Media/layout8.svg" class='8'style="width:100px;height:75px;margin:10px;" data-section="8" draggable="true"><br></div><br>
+                <div class='templateSection empty'><img src="Media/layout6.svg" class='6'style="width:100px;height:75px;margin:10px;" data-section="6"draggable="true"><br></div><br>
+              </div>
+              <hr />
+              <h5>Selected Pages </h5>
+              <div id="selectedCards" style="display:flex;flex-wrap:wrap">
+
+
+              </div>
+          </div>
+          <div class="modal-body" background-color="#dcdcdc">
+
+          </div>
+          <div class="modal-body" background-color="#dcdcdc">
+
+          </div>
+          <div class="modal-body" background-color="#dcdcdc">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="closeModal1" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="addPreview" class="btn btn-secondary">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" width: "600px" height: "400px">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Export</h5>
+
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+      $(window).on('load', function () {
+        $('#exampleModal').modal('show');
+        console.log('test')
+      });
+    </script>
+
+
+      <div id="editor">
+      <template id="1">
+        <div class="ui raised card" id="card1">
+          <div class="content">
+            <div class="header"></div>
+            <div class="meta">
+              <span class="category"></span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="right floated author">
+              1
+            </div>
+          </div>
+        </div>
+      </template>
+      <template id="2">
+        <div class="ui raised card" id="card1">
+          <div class="content">
+            <div class="header"></div>
+            <div class="meta">
+              <span class="category"></span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="right floated author">
+              1
+            </div>
+          </div>
+        </div>
+      </template>
+      <template id="3">
+        <div class="ui raised card" id="card1">
+          <div class="content">
+            <div class="left floated header"> hello</div>
+            <div class="meta">
+              <span class="category"></span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="right floated author">
+              1
+            </div>
+          </div>
+        </div>
+      </template>
+      <template id="4">
+        <div class="ui raised card" id="card1">
+          <div class="content">
+            <div class="header"></div>
+            <div class="meta">
+              <span class="category"></span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="right floated author">
+              1
+            </div>
+          </div>
+        </div>
+      </template>
+      <template id="5">
+        <div class="ui raised card" id="card1">
+          <div class="content">
+            <div class="header"></div>
+            <div class="meta">
+              <span class="category"></span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="right floated author">
+              1
+            </div>
+          </div>
+        </div>
+      </template>
+      <template id="6">
+        <div class="ui raised card" id="card1">
+          <div class="content">
+            <div class="header"></div>
+            <div class="meta">
+              <span class="category"></span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="right floated author">
+              1
+            </div>
+          </div>
+        </div>
+      </template>
+      <template id="hcc">
+
+          <div class="content">
+            <div class="row">
+              <div class="header col-12" style="padding:20;word-wrap:break-word;height:20%">
+                <h3 style="text-align:center;width:100%;height:90%;margin:0" contenteditable="true" ></h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="description  col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:20;word-wrap:break-word;height:70%;">
+                <p class="desc1" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+              <div class="description desc2 col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:20;word-wrap:break-word;height:70%;">
+                <p class="desc2" contenteditable="true" style="margin:0;width:100%;height:99%;"></p>
+              </div>
+            </div>
+          </div>
+
+
+      </template>
+      <template id="hc">
+
+          <div class="content">
+      <div class="row">
+            <div class="header col-12" style="padding:20;word-wrap:break-word;height:20%">
+                <h3 style="text-align:center;width:100%;height:90%;margin:0" contenteditable="true" ></h3>
+              </div>
+        </div>
+            <div class="row">
+              <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:70%;">
+                <p class="desc1" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+            </div>
+          </div>
+
+
+      </template>
+      <template id="cc">
+
+          <div class="content">
+            <div class="row">
+              <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:45%;">
+                <p class="desc1" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:45%;">
+                <p class="desc2" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+            </div>
+          </div>
+
+
+      </template>
+      <template id="hc2c">
+
+          <div class="content">
+       <div class="row">
+            <div class="header col-12" style="padding:20;word-wrap:break-word;height:20%">
+                <h3 style="text-align:center;width:100%;height:90%;margin:0" contenteditable="true" ></h3>
+              </div>
+        </div>
+            <div class="row">
+              <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:35%;">
+                <p class="desc1" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="description  col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:20;word-wrap:break-word;height:35%;">
+                <p class="desc2" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+              <div class="description  col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:20;word-wrap:break-word;height:35%;">
+                <p class="desc3" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+            </div>
+          </div>
+
+
+      </template>
+
+      <template id="h2cr">
+
+          <div class="content">
+      <div class="row">
+            <div class="header col-12" style="padding:20;word-wrap:break-word;height:20%">
+                <h3 style="text-align:center;width:100%;height:90%;margin:0" contenteditable="true" ></h3>
+              </div>
+        </div>
+            <div class="row">
+              <div class="description  col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:20;word-wrap:break-word;height:70%;">
+                <p class="desc1" contenteditable="true"  style="margin:10;width:100%;height:90%;"></p>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:35%;">
+                <p class="desc2" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+                </div>
+                <div class="row">
+                  <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:35%;">
+                <p class="desc3" contenteditable="true"  style="margin:10;width:100%;height:90%;"></p>
+              </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </template>
+      <template id="c2c">
+
+          <div class="content">
+            <div class="row">
+              <div class="description  col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:20;word-wrap:break-word;height:95%;">
+                <p class="desc1" contenteditable="true"  style="margin:10;width:100%;height:90%;"></p>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                 <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:47%;">
+                <p class="desc2" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+                </div>
+                <div class="row">
+                  <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:47%;">
+                <p class="desc3" contenteditable="true"  style="margin:0;width:100%;height:90%;"></p>
+              </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+      </template>
+      <template id="c3c">
+
+          <div class="content">
+            <div class="row">
+              <div class="description  col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding:20;word-wrap:break-word;height:95%;">
+                <p class="desc1" contenteditable="true"  style="margin:10;width:100%;height:90%;"></p>
+              </div>
+              <div class="col-lg-6">
+                <div class="row">
+                  <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:31%;">
+                <p class="desc2" contenteditable="true"  style="margin:10;width:100%;height:90%;"></p>
+              </div>
+                </div>
+                <div class="row">
+                  <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:31%;">
+                <p class="desc3" contenteditable="true"  style="margin:10;width:100%;height:90%;"></p>
+              </div>
+                </div>
+                <div class="row">
+                  <div class="description  col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:20;word-wrap:break-word;height:31%;">
+                <p class="desc4" contenteditable="true"  style="margin:10;width:100%;height:90%;"></p>
+              </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </template>
+      <template id="empty">
+
+          <div class="content">
+          </div>
+
+      </template>
+    </div>
+
+    <div id="pagebar">
+    <center>  <h6 style="padding-top:60px">Preview pane</h6></center>
+    <div id="pages"  class="list-group" style="scrollable:true">
+
+    </div>
+    </div>
+
+  </body>
+  <script>
+      $(document).ready(function () {
+        $('#add').click(function(){
+          $('#closeModal').click();
+          localStorage.setItem('templatename',$('#templatename').val());
+          setTimeout(function(){
+            $('#addpage').click()
+          },500)
+        })
+        var pageNum = 1;
+        var templateCards = document.createElement('div');
+        var previewCards = document.createElement('div');
+        var current ;
+        var prev=[];
+        var tempObj = {
+
+        }
+        $('.templateSection').click(function(evt){
+          current = evt.currentTarget.className.replace('templateSection ','');
+          tempObj = Object.assign({},tempObj,{
+            [current]:0
+          })
+          if(prev.includes(current)){
+            tempObj[current]=tempObj[current]+1;
+            current = current+tempObj[current];
+          }
+          prev.push(current);
+
+          let src = ' <div class="templateSection '+evt.currentTarget.className.replace('templateSection ','')+'-template">'+evt.currentTarget.innerHTML+'</div>';
+          let template = '<div class="ui raised card  template templateSection '+current+'-template" style="width:75vw;height:75vh">'+$('#'+evt.currentTarget.className.replace('templateSection ','')).html()+'<div class="row extra content" style="height:5%"><div class="right floated author" style="padding:1px 5px 1px 5px">'+(pageNum++)+'</div></div></div>';
+          let preview =  '<div class="ui raised list-group-item preview '+current+'-preview" style="margin:5 auto;border:none;">'+$('#'+evt.currentTarget.className.replace('templateSection ','')).html()+'</div>'
+          templateCards.innerHTML+=template;
+          previewCards.innerHTML+=preview;
+          $('#selectedCards').append(src);
+        })
+        $('#addPreview').click(function(){
+          $('#closeModal1').click();
+          setTimeout(function(){
+            $('#editor').append(templateCards);
+            $('#pages').append(previewCards);
+          },500)
+          prev.map(card=>{
+          setTimeout(function(){
+            $('.'+card+'-template'+' .header').on('input',function(evt){
+                $('.'+card+'-preview'+' .header').html(evt.target.innerHTML)
+              })
+              $('.'+card+'-template'+' .desc1').on('input',function(evt){
+                $('.'+card+'-preview'+' .desc1').html(evt.target.innerHTML)
+              })
+              $('.'+card+'-template'+' .desc2').on('input',function(evt){
+                $('.'+card+'-preview'+' .desc2').html(evt.target.innerHTML)
+              })
+              $('.'+card+'-template'+' .desc3').on('input',function(evt){
+                $('.'+card+'-preview'+' .desc3').html(evt.target.innerHTML)
+              })
+              $('.'+card+'-template'+' .desc4').on('input',function(evt){
+                $('.'+card+'-preview'+' .desc4').html(evt.target.innerHTML)
+              })
+              Sortable.create(document.getElementsByClassName(card+'-preview')[0],{group:'preview'})
+              document.getElementsByClassName('preview').style("contenteditable:false")
+
+          },1000)
+          })
+
+        })
+        $('[data-toggle1="tooltip"]').tooltip();
+
+      });
+
+
+    </script>
+  </html>
